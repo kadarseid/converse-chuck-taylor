@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -23,8 +24,27 @@ body {
   padding: 15px;
 }
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.product-img {
+  float: left;
+  margin-right: 40px;
+}
+
+.product-info {
+  width: 243px;
+  float: left;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
 .price {
   font-size: 24px;
+  float: left;
 }
 
 .shipping {
@@ -33,6 +53,8 @@ body {
   font-weight: bold;
   color: #777;
   margin-bottom: 20px;
+  float: right;
+  margin-top: 8px;
 }
 
 .sale {
@@ -47,6 +69,10 @@ body {
   position: absolute;
   top: -17px;
   left: -38px;
+}
+
+.product-description {
+  clear: both;
 }
 
 .more-info:link,
@@ -89,10 +115,16 @@ body {
   background-color: #885214;
 }
 
+.details {
+  width: 243px;
+  float: left;
+  margin-top: 20px;
+}
+
 .details-title {
   text-transform: uppercase;
   font-size: 16px;
-  margin-block: 30px 15px;
+  margin-bottom: 15px;
 }
 
 .details-list {
